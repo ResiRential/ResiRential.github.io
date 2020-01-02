@@ -1,0 +1,30 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+
+
+@media (max-width: 991.98px) {
+    .dark #header.transparent-header,
+    .dark #header.semi-transparent,
+    #header.dark.transparent-header,
+    #header.dark.semi-transparent,
+    .dark #header.transparent-header #header-wrap,
+    .dark #header.semi-transparent #header-wrap,
+    #header.dark.transparent-header #header-wrap,
+    #header.dark.semi-transparent #header-wrap,
+    #header.transparent-header.dark:not(.sticky-header) #header-wrap {
+        background-color: transparent;
+    }
+ 
+    #header.transparent-header + #slider,
+    #header.transparent-header + #page-title.page-title-parallax,
+    #header.transparent-header + #google-map,
+    #slider + #header.transparent-header {
+        top: -170px !important;
+        margin-bottom: -170px !important;
+    }
+}
